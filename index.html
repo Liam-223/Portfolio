@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liam's Portfolio | Developer & Content Creator</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+  <meta name="color-scheme" content="light dark"/>
+</head>
+
+<body>
+  <!-- Theme toggle -->
+  <div class="theme-toggle">
+  <button id="settings-button" class="settings-btn" type="button"
+          aria-haspopup="dialog" aria-expanded="false"
+          aria-controls="settings-panel" title="Settings">
+    <i class="fas fa-gear" aria-hidden="true"></i>
+    <span class="sr-only">Open settings</span>
+  </button>
+</div>
+
+  <!-- Backgrounds -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#home" class="logo">Liam</a>
+      <ul role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="home" aria-label="Home">
+    <div class="container">
+      <div class="home-text">
+        <h1 class="section-title"><span class="purple-text">Hey, </span>I'm Liam 👋</h1>
+        <h2>I build <span class="typing-effect"></span></h2>
+        <p>
+          Developer using
+          <a href="https://create.roblox.com/" target="_blank" class="tool-link" rel="noopener">Roblox Studio</a>
+          and
+          <a href="https://godotengine.org/" target="_blank" class="tool-link" rel="noopener">Godot</a>.<br/>
+          Experienced in Lua(u), GDScript, Python &amp; HTML.
+        </p>
+        <div class="home-buttons">
+          <a href="#projects" class="btn btn-purple">View My Work <i class="fas fa-arrow-down"></i></a>
+          <a href="https://liam-223.itch.io/" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-itch-io"></i> My Itch.io
+          </a>
+          <a href="https://www.youtube.com/@Liam223" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-youtube"></i> My YouTube
+          </a>
+        </div>
+      </div>
+
+      <div class="home-image">
+        <div class="glow-effect"></div>
+        <!-- Put assets in /assets with these names -->
+        <img src="assets/liam-profile.jpg" alt="Portrait of Liam" class="profile-img"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about" aria-label="About">
+    <div class="container">
+      <h2 class="section-title">About <span class="purple-text">Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Game Dev &amp; Content Creator</h3>
+          <p>
+            I specialize in game development with a focus on <strong>Roblox</strong> and <strong>Godot</strong>.
+            I am also a content creator on <strong>YouTube</strong>. bla bla bla more text here...
+          </p>
+          <div class="skills">
+            <h4>My Experiences:</h4>
+            <ul role="list">
+              <li><i class="fas fa-check purple-text"></i> Lua(u)</li>
+              <li><i class="fas fa-check purple-text"></i> GDScript</li>
+              <li><i class="fas fa-check purple-text"></i> Python</li>
+              <li><i class="fas fa-check purple-text"></i> HTML</li>
+              <li><i class="fas fa-check purple-text"></i> Roblox Studio</li>
+              <li><i class="fas fa-check purple-text"></i> Godot</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <div class="purple-frame"></div>
+          <img src="assets/liam-profile.jpg" alt="Liam working at a desk"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects" aria-label="Projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="purple-text">Projects</span></h2>
+
+      <div class="project-grid">
+        <!-- Climbbound -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/climbbound-thumb.jpg" alt="Climbbound thumbnail"/>
+            <div class="project-links">
+              <a href="https://liam-223.itch.io/idle-mountain-climber" target="_blank" rel="noopener" aria-label="Play Climbbound">
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Climbbound</h3>
+            <p>Sysiphus would be jealous</p>
+            <div class="tags">
+              <span class="tag purple-bg">Godot</span>
+              <span class="tag purple-bg">GDScript</span>
+              <span class="tag purple-bg">Game</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- A Fricking Cat Game -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/cat-game-thumb.jpg" alt="A Fricking Cat Game thumbnail"/>
+            <div class="project-links">
+              <a href="https://liam-223.itch.io/a-fricking-cat-game" target="_blank" rel="noopener" aria-label="Play A Fricking Cat Game">
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>A Fricking Cat Game</h3>
+            <p>Cat Pew Pew = Dog Dead Dead</p>
+            <div class="tags">
+              <span class="tag purple-bg">Godot</span>
+              <span class="tag purple-bg">GDScript</span>
+              <span class="tag purple-bg">Game</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Liam's Timer -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/liams-timer-thumb.png" alt="Liam's Timer thumbnail"/>
+            <div class="project-links">
+              <a href="https://liam-223.itch.io/liams-timer" target="_blank" rel="noopener" aria-label="Open Liam's Timer">
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Liam's Timer</h3>
+            <p>Want a timer? Here is a timer.</p>
+            <div class="tags">
+              <span class="tag purple-bg">Tool</span>
+              <span class="tag purple-bg">Python</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-projects">
+        <a href="https://liam-223.itch.io/" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-itch-io"></i> View All on Itch.io
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub -->
+  <section id="github" class="github" aria-label="GitHub">
+    <div class="container">
+      <h2 class="section-title">Projects on <span class="purple-text">GitHub</span></h2>
+
+      <div class="github-intro">
+        <p>Recent public repos from my GitHub. Sorted by latest updates. Check them out :3</p>
+        <div class="github-actions">
+          <button class="btn btn-outline" id="github-load-more"><i class="fab fa-github"></i> Load More</button>
+          <a class="btn btn-purple" target="_blank" rel="noopener" href="https://github.com/Liam-223">
+            <i class="fab fa-github"></i> Visit Profile
+          </a>
+        </div>
+      </div>
+
+      <div id="github-grid" class="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" aria-label="Contact">
+    <div class="container">
+      <h2 class="section-title">Contact <span class="purple-text">Me</span></h2>
+      <div class="contact-content">
+        <p>Want to tell me something?</p>
+        <div class="contact-links">
+          <a href="mailto:jliam223@proton.me" class="btn btn-purple">
+            <i class="fas fa-envelope"></i> jliam223@proton.me
+          </a>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/Liam-223" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://liam-223.itch.io/" target="_blank" rel="noopener" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+            <a href="https://x.com/Liam_22_3" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+            <a href="https://linktr.ee/liam_223" target="_blank" rel="noopener" aria-label="Linktree"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Liam. All rights reserved. (or something like that idk)</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up purple-text"></i></a>
+    </div>
+  </footer>
+
+  <noscript>
+    <style>.typing-effect{visibility:hidden}</style>
+    This site works best with JavaScript enabled.
+  </noscript>
+  
+  <script>window.ANALYTICS_ENDPOINT = 'https://portfolio-analyser.jliam223-e29.workers.dev/';</script>
+  <script src="script.js" defer></script>
+
+  <!-- Settings Panel -->
+  <div id="settings-backdrop" class="settings-backdrop" hidden></div>
+  <aside id="settings-panel" class="settings-panel" role="dialog" aria-modal="false" aria-labelledby="settings-title" hidden>
+    <header class="settings-header">
+      <h3 id="settings-title">Settings</h3>
+      <button id="settings-close" class="settings-close" aria-label="Close settings"><i class="fas fa-times"></i></button>
+    </header>
+
+    
+    
+    <div class="settings-content">
+      <div class="settings-row">
+        <div>
+          <strong>Theme</strong>
+          <div class="subtext">Light / Dark / System</div>
+        </div>
+        <div class="segmented" role="group" aria-label="Theme">
+          <input type="radio" id="th-light" name="theme" value="light">
+          <label for="th-light">Light</label>
+          <input type="radio" id="th-dark" name="theme" value="dark">
+          <label for="th-dark">Dark</label>
+          <input type="radio" id="th-system" name="theme" value="system">
+          <label for="th-system">System</label>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <div>
+          <strong>Accent color</strong>
+          <div class="subtext">Slide to change the purple hue</div>
+        </div>
+        <div class="accent-control">
+          <input type="range" id="opt-accent" min="0" max="360" step="1">
+          <span class="accent-dot" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <div>
+          <strong>Animated background</strong>
+          <div class="subtext">Gradient + floating particles</div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="opt-animated-bg" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="settings-row">
+        <div>
+          <strong>Allow analytics</strong>
+          <div class="subtext">Anonymous page views & clicks</div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="opt-analytics">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="settings-actions">
+        <button id="settings-reset" class="btn btn-outline">Reset to defaults</button>
+      </div>
+    </div>
+
+  </aside>
+
+
+
+</body>
+</html>
